@@ -13,10 +13,36 @@
             <li>Siliguri</li>
             <li>Darjeeling</li>
             <li>Kolkata</li>
+            <li>Mayapur</li>
         </ul>
     </header>
 
 
+    <script>
+        const student = {
+            name: 'Shyam Sundor Roy',
+            id: 121,
+
+            study: function(subject){
+                console.log('Studying subject:', subject);
+            }
+
+        }
+
+
+        const liCollection = document.getElementsByTagName('li');
+        for( const li of liCollection){
+            console.log(li.innerText);
+        }
+        
+
+        const allHeading = document.getElementsByTagName('h1');
+        for( const headings of allHeading){
+            console.log(headings.innerText);
+        }
+
+
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
