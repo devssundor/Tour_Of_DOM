@@ -17,8 +17,40 @@
         </ul>
     </header>
 
+    <main>
+        <h2>Paragraph 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatum nam, odit quibusdam nihil architecto repudiandae ad delectus incidunt quae?</p>
+    </main>
+    <main>
+        <h2>Paragraph 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatum nam, odit quibusdam nihil architecto repudiandae ad delectus incidunt quae?</p>
+    </main>
+    <main>
+        <h2>Paragraph 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatum nam, odit quibusdam nihil architecto repudiandae ad delectus incidunt quae?</p>
+    </main>
+    <main>
+        <h2>Paragraph 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatum nam, odit quibusdam nihil architecto repudiandae ad delectus incidunt quae?</p>
+    </main>
+
 
     <script>
+
+        const para = document.getElementsByTagName('p');
+        for(const par of para){
+            console.log(par.innerText);
+        }
+
+        const heading = document.getElementsByTagName('h2');
+        for(const head of heading){
+            console.log(head);
+            console.log(head.innerText);
+        }
+
+
+
+
         const student = {
             name: 'Shyam Sundor Roy',
             id: 121,
