@@ -34,18 +34,44 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatum nam, odit quibusdam nihil architecto repudiandae ad delectus incidunt quae?</p>
     </main>
 
+    <main>
+        <section>
+            <h1 id="food-title">My loveable food</h1>
+            <ul>
+                <li>Dhoka</li>
+                <li>Ponir</li>
+                <li id="payes">Payes</li>
+                <li>Milk</li>
+                <li>Sweets</li>
+                <li>Pitha</li>
+                <li>Pakoda</li>
+                <li>Everthing</li>
+            </ul>
+        </section>
+    </main>
+
 
     <script>
 
+        const payesItem = document.getElementById('payes');
+        // console.log(payesItem.innerText);
+        payesItem.innerText = 'Khir'
+
+
+        const foodTitle = document.getElementById('food-title');
+        console.log(foodTitle.innerText);
+        foodTitle.innerText = 'If I get this I am the happiest person'
+
+
         const para = document.getElementsByTagName('p');
         for(const par of para){
-            console.log(par.innerText);
+            // console.log(par.innerText);
         }
 
         const heading = document.getElementsByTagName('h2');
         for(const head of heading){
-            console.log(head);
-            console.log(head.innerText);
+            // console.log(head);
+            // console.log(head.innerText);
         }
 
 
@@ -56,7 +82,7 @@
             id: 121,
 
             study: function(subject){
-                console.log('Studying subject:', subject);
+                // console.log('Studying subject:', subject);
             }
 
         }
@@ -64,13 +90,13 @@
 
         const liCollection = document.getElementsByTagName('li');
         for( const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
         
 
         const allHeading = document.getElementsByTagName('h1');
         for( const headings of allHeading){
-            console.log(headings.innerText);
+            // console.log(headings.innerText);
         }
 
 
