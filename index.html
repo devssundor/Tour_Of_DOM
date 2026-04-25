@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <header>
-        <h1>Shyam is playing with DOM</h1>
+    <header id="old-india">
+        <h1>Shyam is playing <span>using span</span> with DOM</h1>
+        <p id="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias rem voluptates rerum animi ducimus quaerat, neque doloremque. Reprehenderit quod eos dicta accusamus necessitatibus earum minus quam repellendus error. Voluptatibus officia similique commodi ducimus possimus nulla, harum iusto labore, repellendus accusamus vel quas ab, amet <span> fine</span> nihil iure! Accusamus <span>Krisha</span>dit, quidem ducimus aperiam omnis harum rerum voluptatum vero voluptatem reiciendis iste excepturi architecto veniam tempore alias quae magnam itaque velit cumque optio ratione reprehenderit id aliquam? Voluptatem iste iure voluptate laboriosam, doloribus similique alias! Est modi saepe, sunt quas eaque quo dignissimos officiis accusantium deleniti et, repellendus dolores eveniet? Error, voluptatem dicta!</p>
         <ul>
             <li>Siliguri</li>
             <li>Darjeeling</li>
@@ -43,9 +44,9 @@
                 <li id="payes">Payes</li>
                 <li>Milk</li>
                 <li>Sweets</li>
-                <li>Pitha</li>
-                <li>Pakoda</li>
-                <li>Everthing</li>
+                <li class="vaja-pora">Pitha</li>
+                <li class="vaja-pora">Pakoda</li>
+                <li class="vaja-pora">Everthing</li>
             </ul>
         </section>
     </main>
@@ -53,13 +54,27 @@
 
     <script>
 
+        const spanElement = document.querySelectorAll('#old-india p span');
+        for( const spano of spanElement){
+            console.log(spano.innerText);
+        }
+
+
+
+        const vaja = document.getElementsByClassName('vaja-pora');
+        for( const vajaPora of vaja){
+            // console.log(vajaPora.innerText);
+        }
+        vaja.innerText = "Don't eat"
+        
+
         const payesItem = document.getElementById('payes');
         // console.log(payesItem.innerText);
         payesItem.innerText = 'Khir'
 
 
         const foodTitle = document.getElementById('food-title');
-        console.log(foodTitle.innerText);
+        // console.log(foodTitle.innerText);
         foodTitle.innerText = 'If I get this I am the happiest person'
 
 
