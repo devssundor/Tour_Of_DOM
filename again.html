@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Changing</title>
+    <style>
+        h1{
+            color: blue;
+            font-size: 100px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hare krishna</h1>
+    <h1 id="krishan">Hare krishna</h1>
+    <button onclick="changeTheColor()">Change the color</button>
+
+    
+    <script>
+        function changeTheColor(){
+            let radha = document.getElementById('krishan');
+            radha.style.color = 'red';
+            radha.style.fontSize = '100px';
+            radha.innerText = 'Radha Radhe'
+        }
+    </script>
 </body>
 </html>
